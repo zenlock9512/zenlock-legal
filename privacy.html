@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隱私政策 · 晨鎖 Zen Lock</title>
+<meta name="description" content="晨鎖 Zen Lock 的隱私政策 / Privacy Policy for Zen Lock.">
+<style>
+  /* 色票取自 App 的 src/theme.ts,讓這一頁看起來屬於同一個產品。
+     刻意不載入外部字型 —— 法律文件應該在任何主機上都能立刻打開。 */
+  :root {
+    --ground:#EAE0D3; --surface:#F4EDE3; --ink:#2C2418; --ink-2:#6B5D4D;
+    --ink-3:#83766A; --rule:#D6C9B7; --rule-soft:#E3D8C9; --sage:#5B6853;
+    --sage-wash:rgba(125,143,114,0.11);
+    --serif: Georgia, 'Noto Serif TC', 'Noto Serif SC', 'Songti TC', 'Songti SC', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            'PingFang TC', 'PingFang SC', 'Noto Sans TC', 'Noto Sans SC',
+            'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#1B1610; --surface:#241E17; --ink:#EFE7DB; --ink-2:#C0B2A0;
+      --ink-3:#9C8E7E; --rule:#3B3226; --rule-soft:#332B21; --sage:#A8BC9C;
+      --sage-wash:rgba(125,143,114,0.16);
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    background:var(--ground); color:var(--ink); font-family:var(--sans);
+    font-size:16px; line-height:1.7; margin:0; padding:0 20px 80px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:680px; margin:0 auto; }
+  header { padding:52px 0 24px; }
+  .eyebrow {
+    font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ink-3); margin:0 0 14px;
+  }
+  h1 {
+    font-family:var(--serif); font-size:clamp(28px,5vw,36px); line-height:1.2;
+    margin:0 0 10px; text-wrap:balance;
+  }
+  .meta { font-size:14px; color:var(--ink-3); margin:0; }
+  .langs { display:flex; gap:8px; margin:22px 0 0; }
+  .langs button {
+    font:inherit; font-size:13px; padding:6px 14px; border-radius:999px;
+    border:1px solid var(--rule); background:var(--surface); color:var(--ink-2);
+    cursor:pointer;
+  }
+  .langs button[aria-pressed="true"] {
+    background:var(--sage-wash); color:var(--sage); border-color:var(--sage);
+    font-weight:600;
+  }
+  .langs button:focus-visible { outline:2px solid var(--sage); outline-offset:2px; }
+  h2 {
+    font-family:var(--serif); font-size:21px; margin:44px 0 4px; line-height:1.3;
+    padding-top:22px; border-top:1px solid var(--rule);
+  }
+  h3 { font-size:15px; margin:22px 0 4px; font-weight:600; }
+  p, li { color:var(--ink-2); }
+  p { margin:10px 0; }
+  ul { margin:10px 0; padding-left:22px; }
+  li { margin-bottom:7px; }
+  strong { color:var(--ink); font-weight:600; }
+  a { color:var(--sage); text-underline-offset:2px; }
+  code {
+    font-family:var(--mono); font-size:.85em; background:var(--surface);
+    padding:1.5px 5px; border-radius:4px; border:1px solid var(--rule-soft);
+  }
+  .callout {
+    background:var(--surface); border:1px solid var(--rule);
+    border-left:3px solid var(--sage); border-radius:10px;
+    padding:14px 16px; margin:18px 0;
+  }
+  .callout p:first-child { margin-top:0; }
+  .callout p:last-child { margin-bottom:0; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14.5px; }
+  .scroller { overflow-x:auto; }
+  th, td {
+    text-align:left; padding:9px 12px; border-bottom:1px solid var(--rule-soft);
+    vertical-align:top;
+  }
+  th { color:var(--ink); font-weight:600; font-size:13px; white-space:nowrap; }
+  td { color:var(--ink-2); }
+  footer {
+    margin-top:52px; padding-top:18px; border-top:1px solid var(--rule);
+    font-size:13.5px; color:var(--ink-3);
+  }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">晨鎖 Zen Lock</p>
+  <h1 id="pagetitle">隱私政策</h1>
+  <p class="meta" id="pagemeta">生效日期：2026 年 9 月 10 日</p>
+  <div class="langs">
+    <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+    <button type="button" data-lang="cn" aria-pressed="false">简体中文</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- ══════════════════════════ 繁體中文 ══════════════════════════ -->
+<main id="zh" lang="zh-Hant">
+
+  <div class="callout">
+    <p><strong>先講最重要的三件事。</strong></p>
+    <p>
+      一、<strong>不登入就不會有任何資料離開你的手機。</strong>免費使用晨鎖不需要帳號，
+      冥想紀錄、鎖定設定全部只存在這台裝置上。<br>
+      二、<strong>你選了哪些 App 要鎖，我們永遠看不到，</strong>而且那份資料在技術上就無法離開你的裝置。<br>
+      三、<strong>我們不賣資料、不投放廣告，也沒有安裝任何第三方分析或追蹤工具。</strong>
+    </p>
+  </div>
+
+  <h2>誰在提供這個 App</h2>
+  <p>
+    晨鎖（Zen Lock）由 <strong>Chon Kit Lam</strong>（個人開發者，澳門）開發與營運，
+    也是本政策所稱的資料控制者。
+  </p>
+  <p>
+    任何與隱私有關的問題、要求或申訴，寄到
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>，我會親自回覆。
+  </p>
+
+  <h2>不建立帳號時，什麼都不會離開裝置</h2>
+  <p>
+    晨鎖的免費功能<strong>完全不需要帳號</strong>。在你自己選擇登入之前，以下資料
+    只存在你的手機上，不會傳送到任何伺服器：
+  </p>
+  <ul>
+    <li>你的名字、頭像字母、以及引導流程中的回答</li>
+    <li>每一次冥想的紀錄（時間、時長、心情）與連續天數</li>
+    <li>所有偏好設定：鎖定時間、音量、語言、通知開關</li>
+    <li>你選擇要鎖定的 App</li>
+  </ul>
+  <p>
+    <strong>只有在你要訂閱時才需要登入</strong>，那是為了讓你換手機或換平台時訂閱能跟著走。
+  </p>
+
+  <h2>登入之後，我們蒐集什麼</h2>
+
+  <h3>帳號資料</h3>
+  <p>
+    你用 <strong>Apple 帳號</strong>或 <strong>Google 帳號</strong>登入。我們會收到一組
+    使用者識別碼和你的電子郵件地址，用來辨識你的帳號、把資料同步回你的裝置，
+    以及在必要時與你聯絡。
+  </p>
+  <p>
+    使用 Apple 登入時，你可以選擇「<strong>隱藏我的電子郵件</strong>」——
+    那樣我們收到的只是一個 Apple 提供的轉寄地址，看不到你真正的信箱。
+  </p>
+
+  <h3>同步的進度與設定</h3>
+  <p>
+    登入之後，下列資料會加密傳輸並存放在我們的資料庫（Supabase，位於<strong>新加坡</strong>），
+    目的只有一個：讓你換手機、重裝 App 之後拿得回自己的進度。
+  </p>
+  <div class="scroller">
+    <table>
+      <tr><th>類別</th><th>內容</th></tr>
+      <tr>
+        <td>冥想進度</td>
+        <td>連續天數、最佳紀錄、總時數，以及<strong>每一次完成的冥想明細</strong>
+          （結束時間、實際時長、你在該次前後選擇的心情）</td>
+      </tr>
+      <tr>
+        <td>個人資料</td>
+        <td>你輸入的名字、頭像字母、引導流程中選擇的目標與問卷答案</td>
+      </tr>
+      <tr>
+        <td>偏好設定</td>
+        <td>語言、鎖定時間與排程方式、四軌音量、通知開關</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    這是一份<strong>白名單</strong>：只有明確列在上面的欄位會同步，其餘一律不會。
+  </p>
+
+  <h3>訂閱與購買</h3>
+  <p>
+    訂閱由 <strong>Apple</strong> 處理付款，由 <strong>RevenueCat</strong>
+    （美國）代為驗證與管理訂閱狀態。它們會處理購買識別碼、交易紀錄、訂閱狀態，
+    以及裝置層級的技術資訊（例如裝置國別、iOS 的廣告追蹤同意狀態）。
+  </p>
+  <p>
+    <strong>我們永遠看不到你的付款方式或信用卡資料。</strong>那些只在 Apple 手上。
+  </p>
+
+  <h2>什麼永遠不會離開你的裝置</h2>
+  <ul>
+    <li>
+      <strong>你選了哪些 App 要鎖。</strong>那份選擇是 Apple「螢幕使用時間」產生的一個
+      不透明識別碼，只在你這台裝置上有意義。我們無法解讀它，也刻意不同步它 ——
+      換手機之後你必須重新選一次，那是這個設計的代價，我們認為值得。
+    </li>
+    <li>你的通知紀錄、今天有沒有解鎖、以及畫面上的暫存選擇。</li>
+  </ul>
+
+  <h2>我們不做的事</h2>
+  <ul>
+    <li><strong>不販售、不出租、不交換</strong>你的個人資料。</li>
+    <li><strong>不投放廣告</strong>，也不把資料用於廣告或跨 App 追蹤。</li>
+    <li>
+      <strong>沒有第三方分析或追蹤工具。</strong>這個 App 裡沒有安裝任何分析、
+      歸因或當機回報 SDK。
+    </li>
+    <li>
+      <strong>不使用麥克風、相機、定位、通訊錄或照片。</strong>App 完全沒有請求這些權限
+      （麥克風在建置設定中已明確關閉）。
+    </li>
+  </ul>
+  <p>
+    未來若在首頁顯示「今天早上有多少人完成了儀式」這類匿名數字，
+    傳送的內容<strong>只有一個日期</strong>，不含任何識別碼、不含隨機 UUID、
+    也不含帳號資訊。<strong>該功能目前是關閉的。</strong>
+  </p>
+
+  <h2>誰會接觸到這些資料</h2>
+  <div class="scroller">
+    <table>
+      <tr><th>服務</th><th>做什麼</th><th>資料位置</th></tr>
+      <tr><td>Supabase</td><td>帳號認證與進度同步</td><td>新加坡</td></tr>
+      <tr><td>RevenueCat</td><td>訂閱狀態驗證與管理</td><td>美國</td></tr>
+      <tr><td>Apple</td><td>付款、Sign in with Apple、通知</td><td>依 Apple 的政策</td></tr>
+      <tr><td>Google</td><td>Google 帳號登入</td><td>依 Google 的政策</td></tr>
+    </table>
+  </div>
+  <p>
+    這些是為了讓 App 運作而必要的處理者。除此之外，除非法律要求，我們不會把你的資料
+    交給任何第三方。
+  </p>
+
+  <h2>保存多久，以及怎麼刪掉</h2>
+  <p>
+    只要你的帳號存在，資料就保留著 —— 那正是它的用途。
+  </p>
+  <p>
+    <strong>你可以在 App 內直接刪除帳號：</strong>設定 → 刪除帳號。
+    按下去之後，我們資料庫裡屬於你的那一列會<strong>立即且永久地刪除</strong>，
+    包括所有冥想紀錄與設定。「刪帳號」和「刪資料」在我們這裡是同一個動作，
+    不會留下半截狀態。
+  </p>
+  <p>
+    刪除 App 會一併清掉裝置上的所有本機資料。
+  </p>
+  <p>
+    <strong>兩件我們控制不了的事：</strong>Apple 基於稅務與退款義務保存的購買紀錄，
+    以及你已付款的訂閱期間 —— 訂閱的取消請在 iOS 的「設定 → Apple 帳號 → 訂閱項目」中處理。
+  </p>
+
+  <h2>你的權利</h2>
+  <p>
+    依你所在地的法律（包括歐盟 GDPR 與英國 UK GDPR），你有權要求存取、更正、刪除、
+    限制處理你的個人資料，或要求以可攜格式取得副本，也有權隨時撤回同意。
+  </p>
+  <p>
+    刪除可以直接在 App 內完成（見上）。其他請求寄到
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>，
+    我會在 30 天內回覆。若你認為我們處理不當，你有權向所在地的資料保護主管機關申訴。
+  </p>
+
+  <h2>兒童</h2>
+  <p>
+    晨鎖不以 13 歲以下兒童為對象，我們也不會刻意蒐集他們的個人資料。
+    若你是家長並發現孩子在未經同意的情況下建立了帳號，請來信，我們會刪除該帳號。
+  </p>
+
+  <h2>政策變更</h2>
+  <p>
+    這份政策更新時，我們會修改頁首的生效日期。
+    若變更涉及重大事項（例如新增一類資料的蒐集），我們會在 App 內告知你。
+  </p>
+
+</main>
+
+<!-- ══════════════════════════ 简体中文 ══════════════════════════ -->
+<main id="cn" lang="zh-Hans" hidden>
+
+  <div class="callout">
+    <p><strong>先讲最重要的三件事。</strong></p>
+    <p>
+      一、<strong>不登录就不会有任何数据离开你的手机。</strong>免费使用晨锁不需要账号，
+      冥想记录、锁定设置全部只存在这台设备上。<br>
+      二、<strong>你选了哪些 App 要锁，我们永远看不到，</strong>而且那份数据在技术上就无法离开你的设备。<br>
+      三、<strong>我们不卖数据、不投放广告，也没有安装任何第三方分析或跟踪工具。</strong>
+    </p>
+  </div>
+
+  <h2>谁在提供这个 App</h2>
+  <p>
+    晨锁（Zen Lock）由 <strong>Chon Kit Lam</strong>（个人开发者，澳门）开发与运营，
+    也是本政策所称的数据控制者。
+  </p>
+  <p>
+    任何与隐私有关的问题、要求或投诉，发到
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>，我会亲自回复。
+  </p>
+
+  <h2>不创建账号时，什么都不会离开设备</h2>
+  <p>
+    晨锁的免费功能<strong>完全不需要账号</strong>。在你自己选择登录之前，以下数据
+    只存在你的手机上，不会传送到任何服务器：
+  </p>
+  <ul>
+    <li>你的名字、头像字母，以及引导流程中的回答</li>
+    <li>每一次冥想的记录（时间、时长、心情）与连续天数</li>
+    <li>所有偏好设置：锁定时间、音量、语言、通知开关</li>
+    <li>你选择要锁定的 App</li>
+  </ul>
+  <p>
+    <strong>只有在你要订阅时才需要登录</strong>，那是为了让你换手机或换平台时订阅能跟着走。
+  </p>
+
+  <h2>登录之后，我们收集什么</h2>
+
+  <h3>账号数据</h3>
+  <p>
+    你用 <strong>Apple 账号</strong>或 <strong>Google 账号</strong>登录。我们会收到一组
+    用户标识符和你的电子邮件地址，用来识别你的账号、把数据同步回你的设备，
+    以及在必要时与你联系。
+  </p>
+  <p>
+    使用 Apple 登录时，你可以选择「<strong>隐藏我的电子邮件</strong>」——
+    那样我们收到的只是一个 Apple 提供的转发地址，看不到你真正的邮箱。
+  </p>
+
+  <h3>同步的进度与设置</h3>
+  <p>
+    登录之后，下列数据会加密传输并存放在我们的数据库（Supabase，位于<strong>新加坡</strong>），
+    目的只有一个：让你换手机、重装 App 之后拿得回自己的进度。
+  </p>
+  <div class="scroller">
+    <table>
+      <tr><th>类别</th><th>内容</th></tr>
+      <tr>
+        <td>冥想进度</td>
+        <td>连续天数、最佳记录、总时长，以及<strong>每一次完成的冥想明细</strong>
+          （结束时间、实际时长、你在该次前后选择的心情）</td>
+      </tr>
+      <tr>
+        <td>个人资料</td>
+        <td>你输入的名字、头像字母、引导流程中选择的目标与问卷答案</td>
+      </tr>
+      <tr>
+        <td>偏好设置</td>
+        <td>语言、锁定时间与排程方式、四轨音量、通知开关</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    这是一份<strong>白名单</strong>：只有明确列在上面的字段会同步，其余一律不会。
+  </p>
+
+  <h3>订阅与购买</h3>
+  <p>
+    订阅由 <strong>Apple</strong> 处理付款，由 <strong>RevenueCat</strong>
+    （美国）代为验证与管理订阅状态。它们会处理购买标识符、交易记录、订阅状态，
+    以及设备层面的技术信息（例如设备国家/地区、iOS 的广告跟踪同意状态）。
+  </p>
+  <p>
+    <strong>我们永远看不到你的付款方式或银行卡信息。</strong>那些只在 Apple 手上。
+  </p>
+
+  <h2>什么永远不会离开你的设备</h2>
+  <ul>
+    <li>
+      <strong>你选了哪些 App 要锁。</strong>那份选择是 Apple「屏幕使用时间」生成的一个
+      不透明标识符，只在你这台设备上有意义。我们无法解读它，也刻意不同步它 ——
+      换手机之后你必须重新选一次，那是这个设计的代价，我们认为值得。
+    </li>
+    <li>你的通知记录、今天有没有解锁，以及界面上的临时选择。</li>
+  </ul>
+
+  <h2>我们不做的事</h2>
+  <ul>
+    <li><strong>不出售、不出租、不交换</strong>你的个人信息。</li>
+    <li><strong>不投放广告</strong>，也不把数据用于广告或跨 App 跟踪。</li>
+    <li>
+      <strong>没有第三方分析或跟踪工具。</strong>这个 App 里没有安装任何分析、
+      归因或崩溃上报 SDK。
+    </li>
+    <li>
+      <strong>不使用麦克风、相机、定位、通讯录或照片。</strong>App 完全没有请求这些权限
+      （麦克风在构建配置中已明确关闭）。
+    </li>
+  </ul>
+  <p>
+    未来若在首页显示「今天早上有多少人完成了仪式」这类匿名数字，
+    发送的内容<strong>只有一个日期</strong>，不含任何标识符、不含随机 UUID、
+    也不含账号信息。<strong>该功能目前是关闭的。</strong>
+  </p>
+
+  <h2>谁会接触到这些数据</h2>
+  <div class="scroller">
+    <table>
+      <tr><th>服务</th><th>做什么</th><th>数据位置</th></tr>
+      <tr><td>Supabase</td><td>账号认证与进度同步</td><td>新加坡</td></tr>
+      <tr><td>RevenueCat</td><td>订阅状态验证与管理</td><td>美国</td></tr>
+      <tr><td>Apple</td><td>付款、Sign in with Apple、通知</td><td>依 Apple 的政策</td></tr>
+      <tr><td>Google</td><td>Google 账号登录</td><td>依 Google 的政策</td></tr>
+    </table>
+  </div>
+  <p>
+    这些是为了让 App 运行而必要的处理者。除此之外，除非法律要求，我们不会把你的数据
+    交给任何第三方。
+  </p>
+
+  <h2>保存多久，以及怎么删除</h2>
+  <p>
+    只要你的账号存在，数据就保留着 —— 那正是它的用途。
+  </p>
+  <p>
+    <strong>你可以在 App 内直接删除账号：</strong>设置 → 删除账号。
+    按下之后，我们数据库里属于你的那一行会<strong>立即且永久地删除</strong>，
+    包括所有冥想记录与设置。「删账号」和「删数据」在我们这里是同一个动作，
+    不会留下半截状态。
+  </p>
+  <p>
+    删除 App 会一并清掉设备上的所有本地数据。
+  </p>
+  <p>
+    <strong>两件我们控制不了的事：</strong>Apple 基于税务与退款义务保存的购买记录，
+    以及你已付款的订阅期间 —— 订阅的取消请在 iOS 的「设置 → Apple 账户 → 订阅」中处理。
+  </p>
+
+  <h2>你的权利</h2>
+  <p>
+    依你所在地的法律（包括欧盟 GDPR 与英国 UK GDPR），你有权要求访问、更正、删除、
+    限制处理你的个人信息，或要求以可携格式取得副本，也有权随时撤回同意。
+  </p>
+  <p>
+    删除可以直接在 App 内完成（见上）。其他请求发到
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>，
+    我会在 30 天内回复。若你认为我们处理不当，你有权向所在地的数据保护主管机关投诉。
+  </p>
+
+  <h2>儿童</h2>
+  <p>
+    晨锁不以 13 岁以下儿童为对象，我们也不会刻意收集他们的个人信息。
+    若你是家长并发现孩子在未经同意的情况下创建了账号，请来信，我们会删除该账号。
+  </p>
+
+  <h2>政策变更</h2>
+  <p>
+    这份政策更新时，我们会修改页首的生效日期。
+    若变更涉及重大事项（例如新增一类数据的收集），我们会在 App 内告知你。
+  </p>
+
+</main>
+
+<!-- ══════════════════════════ English ══════════════════════════ -->
+<main id="en" lang="en" hidden>
+
+  <div class="callout">
+    <p><strong>The three things that matter most.</strong></p>
+    <p>
+      1. <strong>Nothing leaves your phone unless you sign in.</strong> Zen Lock's free
+      features need no account — your meditation history and lock settings stay on the
+      device.<br>
+      2. <strong>We can never see which apps you chose to lock,</strong> and that data is
+      technically incapable of leaving your device.<br>
+      3. <strong>We do not sell data, we run no ads, and the app contains no third-party
+      analytics or tracking SDKs.</strong>
+    </p>
+  </div>
+
+  <h2>Who provides this app</h2>
+  <p>
+    Zen Lock (晨鎖) is built and operated by <strong>Chon Kit Lam</strong>, an individual
+    developer based in Macao, who is also the data controller for the purposes of this policy.
+  </p>
+  <p>
+    For any privacy question, request, or complaint, write to
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a> and I will answer personally.
+  </p>
+
+  <h2>Without an account, nothing leaves the device</h2>
+  <p>
+    Zen Lock's free features require <strong>no account at all</strong>. Until you choose to
+    sign in, all of the following stays on your phone and is never sent to any server:
+  </p>
+  <ul>
+    <li>Your name, avatar initial, and your answers during onboarding</li>
+    <li>Every meditation record (time, duration, mood) and your streak</li>
+    <li>All preferences: lock time, volumes, language, notification toggles</li>
+    <li>The apps you chose to lock</li>
+  </ul>
+  <p>
+    <strong>Signing in is required only to subscribe</strong>, so that your subscription
+    follows you to a new phone or a different platform.
+  </p>
+
+  <h2>What we collect once you sign in</h2>
+
+  <h3>Account data</h3>
+  <p>
+    You sign in with <strong>Apple</strong> or <strong>Google</strong>. We receive a user
+    identifier and your email address, used to identify your account, sync your data back to
+    your devices, and contact you when necessary.
+  </p>
+  <p>
+    With Sign in with Apple you may choose <strong>Hide My Email</strong> — in that case we
+    only ever receive a relay address supplied by Apple, never your real inbox.
+  </p>
+
+  <h3>Synced progress and settings</h3>
+  <p>
+    After you sign in, the following is transmitted over an encrypted connection and stored
+    in our database (Supabase, hosted in <strong>Singapore</strong>), for one purpose: so you
+    get your progress back after changing phones or reinstalling.
+  </p>
+  <div class="scroller">
+    <table>
+      <tr><th>Category</th><th>Contents</th></tr>
+      <tr>
+        <td>Meditation progress</td>
+        <td>Streak, best streak, total minutes, and <strong>a record of each completed
+          session</strong> (end time, actual duration, the mood you selected before and after)</td>
+      </tr>
+      <tr>
+        <td>Profile</td>
+        <td>The name you entered, avatar initial, goals and onboarding answers</td>
+      </tr>
+      <tr>
+        <td>Preferences</td>
+        <td>Language, lock time and schedule type, the four volume levels,
+          notification toggles</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    This is an <strong>allow-list</strong>: only the fields listed above are ever synced.
+  </p>
+
+  <h3>Subscriptions and purchases</h3>
+  <p>
+    Payment is handled by <strong>Apple</strong>. Subscription status is validated and managed
+    on our behalf by <strong>RevenueCat</strong> (United States), which processes purchase
+    identifiers, transaction records, subscription state, and device-level technical
+    information such as country and the iOS tracking-consent status.
+  </p>
+  <p>
+    <strong>We never see your payment method or card details.</strong> Those stay with Apple.
+  </p>
+
+  <h2>What never leaves your device</h2>
+  <ul>
+    <li>
+      <strong>Which apps you chose to lock.</strong> That selection is an opaque token issued
+      by Apple's Screen Time, meaningful only on your device. We cannot read it, and we
+      deliberately never sync it — which is why you must re-select your apps after switching
+      phones. That is the cost of the design, and we think it is worth paying.
+    </li>
+    <li>Your notification history, whether today is unlocked, and on-screen draft selections.</li>
+  </ul>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li><strong>We do not sell, rent, or trade</strong> your personal data.</li>
+    <li><strong>We serve no advertising</strong> and use no data for ads or cross-app tracking.</li>
+    <li>
+      <strong>No third-party analytics or tracking.</strong> The app ships with no analytics,
+      attribution, or crash-reporting SDK of any kind.
+    </li>
+    <li>
+      <strong>No microphone, camera, location, contacts, or photos.</strong> The app requests
+      none of these permissions (microphone access is explicitly disabled at build time).
+    </li>
+  </ul>
+  <p>
+    If we later show an anonymous figure such as "how many people completed their ritual this
+    morning", the request will contain <strong>a date and nothing else</strong> — no
+    identifier, no random UUID, no account information.
+    <strong>That feature is currently switched off.</strong>
+  </p>
+
+  <h2>Who processes this data</h2>
+  <div class="scroller">
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Location</th></tr>
+      <tr><td>Supabase</td><td>Authentication and progress sync</td><td>Singapore</td></tr>
+      <tr><td>RevenueCat</td><td>Subscription validation and management</td><td>United States</td></tr>
+      <tr><td>Apple</td><td>Payment, Sign in with Apple, notifications</td><td>Per Apple's policy</td></tr>
+      <tr><td>Google</td><td>Google account sign-in</td><td>Per Google's policy</td></tr>
+    </table>
+  </div>
+  <p>
+    These are processors necessary to operate the app. Beyond them, we do not share your data
+    with any third party except where required by law.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Your data is kept for as long as your account exists — that is what it is for.
+  </p>
+  <p>
+    <strong>You can delete your account from inside the app:</strong> Settings → Delete
+    account. Your row in our database is then <strong>immediately and permanently
+    deleted</strong>, including every meditation record and setting. Deleting the account and
+    deleting the data are the same single operation here; there is no half-deleted state.
+  </p>
+  <p>
+    Deleting the app removes all local data from the device.
+  </p>
+  <p>
+    <strong>Two things outside our control:</strong> purchase records Apple retains for tax
+    and refund obligations, and any subscription period you have already paid for — cancel a
+    subscription in iOS under Settings → Apple Account → Subscriptions.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Depending on where you live (including under the EU GDPR and UK GDPR), you have the right
+    to access, correct, delete, or restrict the processing of your personal data, to receive a
+    copy in a portable format, and to withdraw consent at any time.
+  </p>
+  <p>
+    Deletion is available directly in the app (see above). For anything else, write to
+    <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a> and I will respond within
+    30 days. If you believe we have handled your data improperly, you have the right to lodge
+    a complaint with your local data protection authority.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Zen Lock is not directed at children under 13, and we do not knowingly collect their
+    personal data. If you are a parent and find that your child has created an account without
+    your consent, write to us and we will delete it.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    When this policy is updated we will change the effective date at the top of the page. If a
+    change is material — for example, collecting a new category of data — we will tell you
+    inside the app.
+  </p>
+
+</main>
+
+<footer>
+  <p id="foot">
+    晨鎖 Zen Lock · Chon Kit Lam · 澳門<br>
+    聯絡：<a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>
+  </p>
+</footer>
+
+</div>
+
+<script>
+  (function () {
+    // 每種語言一組:正文的 id、頁首標題、生效日期、頁尾、<title>、lang 屬性。
+    // 之後要再加一種語言,只要在這裡多一列並複製一段 <main>。
+    var LANGS = {
+      zh: { t: '隱私政策', m: '生效日期：2026 年 9 月 10 日',
+            f: '晨鎖 Zen Lock · Chon Kit Lam · 澳門<br>聯絡：<a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
+            doc: '隱私政策 · 晨鎖 Zen Lock', code: 'zh-Hant' },
+      cn: { t: '隐私政策', m: '生效日期：2026 年 9 月 10 日',
+            f: '晨锁 Zen Lock · Chon Kit Lam · 澳门<br>联系：<a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
+            doc: '隐私政策 · 晨锁 Zen Lock', code: 'zh-Hans' },
+      en: { t: 'Privacy Policy', m: 'Effective 10 September 2026',
+            f: 'Zen Lock · Chon Kit Lam · Macao<br>Contact: <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
+            doc: 'Privacy Policy · Zen Lock', code: 'en' }
+    };
+    var keys = Object.keys(LANGS);
+    var buttons = document.querySelectorAll('.langs button');
+
+    function show(lang) {
+      if (!LANGS[lang]) return;
+      keys.forEach(function (k) { document.getElementById(k).hidden = k !== lang; });
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+      });
+      var x = LANGS[lang];
+      document.getElementById('pagetitle').textContent = x.t;
+      document.getElementById('pagemeta').textContent = x.m;
+      document.getElementById('foot').innerHTML = x.f;
+      document.title = x.doc;
+      document.documentElement.lang = x.code;
+      if (history.replaceState) history.replaceState(null, '', '#' + lang);
+    }
+
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.lang); });
+    });
+
+    // 網址帶 #en / #cn 就直接開那一版 —— 送審時可以把 #en 那個連結交出去。
+    show(LANGS[location.hash.slice(1)] ? location.hash.slice(1) : 'zh');
+  })();
+</script>
+
+</body>
+</html>
