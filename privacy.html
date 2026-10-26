@@ -96,7 +96,7 @@
 <header>
   <p class="eyebrow">晨鎖 Zen Lock</p>
   <h1 id="pagetitle">隱私政策</h1>
-  <p class="meta" id="pagemeta">生效日期：2026 年 10 月 12 日</p>
+  <p class="meta" id="pagemeta">生效日期：2026 年 10 月 26 日</p>
   <div class="langs">
     <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
     <button type="button" data-lang="cn" aria-pressed="false">简体中文</button>
@@ -167,15 +167,15 @@
         <td>冥想進度</td>
         <td>最佳連續紀錄、總時數、緊急解鎖次數，以及三份明細：<strong>每一次完成的冥想</strong>
           （結束時間、實際時長）、<strong>每一次呼吸練習</strong>（結束時間、練的是哪一種呼吸法、時長）、
-          <strong>每一次緊急解鎖的時間</strong>。連續天數和你的樹是從這些明細算出來的，不另外儲存</td>
+          <strong>每一次緊急解鎖的時間</strong>。另外記著最後一次完成冥想與儀式的日期，以及樹最近一次播過升級動畫的等級（免得換手機之後再播一次）。連續天數和樹本身是從這些明細算出來的，不另外儲存</td>
       </tr>
       <tr>
         <td>個人資料</td>
-        <td>你輸入的名字、引導流程中選擇的目標與問卷答案</td>
+        <td>你輸入的名字、引導流程中選擇的目標與問卷答案，以及是否已經看過引導與教學</td>
       </tr>
       <tr>
         <td>偏好設定</td>
-        <td>語言、四軌音量、通知開關</td>
+        <td>語言、呼吸引導的語言、四軌音量、通知開關</td>
       </tr>
     </table>
   </div>
@@ -216,8 +216,7 @@
       歸因或當機回報 SDK。
     </li>
     <li>
-      <strong>不使用麥克風、相機、定位、通訊錄或照片。</strong>App 完全沒有請求這些權限
-      （麥克風在建置設定中已明確關閉）。
+      <strong>不使用麥克風、相機、定位、通訊錄或照片。</strong>App 完全沒有請求這些權限。App 的設定檔裡有一句麥克風的用途說明，那只是因為音訊引擎連結了 iOS 的錄音介面，而 Apple 規定只要連結了就必須附上說明；App 從來不會請求這個權限，也不會開啟麥克風。
     </li>
   </ul>
   <p>
@@ -356,15 +355,15 @@
         <td>冥想进度</td>
         <td>最佳连续记录、总时长、紧急解锁次数，以及三份明细：<strong>每一次完成的冥想</strong>
           （结束时间、实际时长）、<strong>每一次呼吸练习</strong>（结束时间、练的是哪一种呼吸法、时长）、
-          <strong>每一次紧急解锁的时间</strong>。连续天数和你的树是从这些明细算出来的，不另外储存</td>
+          <strong>每一次紧急解锁的时间</strong>。另外记着最后一次完成冥想与仪式的日期，以及树最近一次播过升级动画的等级（免得换手机之后再播一次）。连续天数和树本身是从这些明细算出来的，不另外储存</td>
       </tr>
       <tr>
         <td>个人资料</td>
-        <td>你输入的名字、引导流程中选择的目标与问卷答案</td>
+        <td>你输入的名字、引导流程中选择的目标与问卷答案，以及是否已经看过引导与教程</td>
       </tr>
       <tr>
         <td>偏好设置</td>
-        <td>语言、四轨音量、通知开关</td>
+        <td>语言、呼吸引导的语言、四轨音量、通知开关</td>
       </tr>
     </table>
   </div>
@@ -405,8 +404,7 @@
       归因或崩溃上报 SDK。
     </li>
     <li>
-      <strong>不使用麦克风、相机、定位、通讯录或照片。</strong>App 完全没有请求这些权限
-      （麦克风在构建配置中已明确关闭）。
+      <strong>不使用麦克风、相机、定位、通讯录或照片。</strong>App 完全没有请求这些权限。App 的配置文件里有一句麦克风的用途说明，那只是因为音频引擎链接了 iOS 的录音接口，而 Apple 规定只要链接了就必须附上说明；App 从来不会请求这个权限，也不会打开麦克风。
     </li>
   </ul>
   <p>
@@ -551,16 +549,18 @@
         <td>Best streak, total minutes, emergency-unlock count, and three logs: <strong>each
           completed meditation</strong> (end time, actual duration), <strong>each breathing
           practice</strong> (end time, which pattern, duration), and <strong>the time of each
-          emergency unlock</strong>. Your streak and your tree are worked out from these logs,
-          not stored separately</td>
+          emergency unlock</strong>. Alongside them: the dates of your last meditation and last
+          completed ritual, and the last tree level whose level-up animation has played (so a
+          new phone does not play it again). Your streak and the tree itself are worked out from
+          these logs, not stored separately</td>
       </tr>
       <tr>
         <td>Profile</td>
-        <td>The name you entered, goals and onboarding answers</td>
+        <td>The name you entered, goals and onboarding answers, and whether you have seen the onboarding and the tutorial</td>
       </tr>
       <tr>
         <td>Preferences</td>
-        <td>Language, the four volume levels, notification toggles</td>
+        <td>Language, the breathing-guide voice, the four volume levels, notification toggles</td>
       </tr>
     </table>
   </div>
@@ -605,7 +605,10 @@
     </li>
     <li>
       <strong>No microphone, camera, location, contacts, or photos.</strong> The app requests
-      none of these permissions (microphone access is explicitly disabled at build time).
+      none of these permissions. Its configuration does carry a one-line microphone usage
+      description, only because the audio engine links iOS's recording interfaces and Apple
+      requires the description whenever they are linked; the app never asks for this
+      permission and never turns the microphone on.
     </li>
   </ul>
   <p>
@@ -701,13 +704,13 @@
     // 每種語言一組:正文的 id、頁首標題、生效日期、頁尾、<title>、lang 屬性。
     // 之後要再加一種語言,只要在這裡多一列並複製一段 <main>。
     var LANGS = {
-      zh: { t: '隱私政策', m: '生效日期：2026 年 10 月 12 日',
+      zh: { t: '隱私政策', m: '生效日期：2026 年 10 月 26 日',
             f: '晨鎖 Zen Lock · Chon Kit Lam · 澳門<br>聯絡：<a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
             doc: '隱私政策 · 晨鎖 Zen Lock', code: 'zh-Hant' },
-      cn: { t: '隐私政策', m: '生效日期：2026 年 10 月 12 日',
+      cn: { t: '隐私政策', m: '生效日期：2026 年 10 月 26 日',
             f: '晨锁 Zen Lock · Chon Kit Lam · 澳门<br>联系：<a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
             doc: '隐私政策 · 晨锁 Zen Lock', code: 'zh-Hans' },
-      en: { t: 'Privacy Policy', m: 'Effective 12 October 2026',
+      en: { t: 'Privacy Policy', m: 'Effective 26 October 2026',
             f: 'Zen Lock · Chon Kit Lam · Macao<br>Contact: <a href="mailto:zenlock9512@gmail.com">zenlock9512@gmail.com</a>',
             doc: 'Privacy Policy · Zen Lock', code: 'en' }
     };
